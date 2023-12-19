@@ -1,14 +1,17 @@
-import React from 'react'
-import Card from './Card';
+import React, { useContext } from 'react'
 import { mockCompanyDetails } from '../constants/mock';
 import Header from './Header';
 import Details from './Details';
 import Overview from './Overview';
 import Chart from './Chart';
+import ThemeContext from '../context/ThemeContext';
 
 const Dashboard = () => {
+  const { darkMode } = useContext(ThemeContext);
   return (
-    <div className='h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-8 md:grid-rows-7 xl:grid-rows-5 auto-rows-fr gap-6 p-10 bg-neutral-200'>
+    <div className={`h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-8 md:grid-rows-7 xl:grid-rows-5 auto-rows-fr gap-6 p-10 ${
+        darkMode ? 'bg-gray-900 text-gray-300' : 'bg-neutral-200'
+    }`}>
         <div className='col-span-1 md:col-span-2 xl:col-span-3 row-span-1 flex justify-start items-center'>
             {/* <h1 className='text-5xl'>{mockCompanyDetails.name}</h1> */}
             <Header name={mockCompanyDetails.name}/>
