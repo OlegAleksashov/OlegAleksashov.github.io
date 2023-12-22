@@ -43,6 +43,3 @@ const Details = ({ details }) => {
 };
 
 export default Details;
-// ${
-//     darkMode ? 'divide-gray-800' : null
-// }
