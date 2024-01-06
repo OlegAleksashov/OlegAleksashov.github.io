@@ -13,3 +13,5 @@ const Card = ({ children }) => {
 };
 
 export default Card;
+
+// max-w-xs sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl
