@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olegaleksashov.github.io/dashboard",
+  "homepage": "https://OlegAleksashov.github.io/dashboard",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.17.0",
